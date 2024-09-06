@@ -7,10 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 file(GLOB SOURCES
 src/*.cpp
+src/*/*.cpp
 )
 
 file(GLOB HEADERS
 src/*.hpp
+src/*/*.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
